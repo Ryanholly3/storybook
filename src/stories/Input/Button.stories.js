@@ -1,13 +1,13 @@
 import React from 'react';
-import { storiesOf, addDecorator } from '@storybook/react';
+import { storiesOf } from '@storybook/react';
 
 import {muiTheme} from 'storybook-addon-material-ui';
 
 import { Button } from '@material-ui/core';
-import { theme } from './theme'
+import { theme } from '../theme'
 
 
-storiesOf('Material-UI', module)
+storiesOf('Input', module)
   .addDecorator(muiTheme([theme]))
   .add('Button', () => (
       <div>
@@ -54,5 +54,8 @@ storiesOf('Material-UI', module)
           </Button>
         </div>
       </div>
-      ))
-  
+    ))
+
+export default {
+  title: 'Navigation/Button'
+}
